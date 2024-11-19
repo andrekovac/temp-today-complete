@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "temp-today",
-    "slug": "temp-today",
+    "name": "temp-today-complete",
+    "slug": "temp-today-complete",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
