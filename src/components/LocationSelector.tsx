@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { View } from "react-native";
 import { Picker } from "@react-native-picker/picker";
 import { observer } from "mobx-react";
@@ -19,14 +19,14 @@ const LocationSelector: React.FC = () => {
     <View className="m-5">
       <Picker
         selectedValue={selectedCity}
-        onValueChange={(itemValue) => setSelectedCity(itemValue as CityName)}
+        onValueChange={(itemValue) => setSelectedCity(itemValue)}
         itemStyle={{ color: "blue" }}
       >
         {Object.keys(cityCoordinates).map((city) => (
           <Picker.Item key={city} label={city} value={city} />
         ))}
       </Picker>
-      <StyledButton title="Set Location" onPress={onPress} />
+      <StyledButton onPress={onPress}>Set Location</StyledButton>
     </View>
   );
 };

@@ -1,18 +1,17 @@
-import React from "react";
-import { Pressable, Text, TouchableOpacity } from "react-native";
+import { Text, TouchableOpacity } from "react-native";
 
 type StyledButtonProps = {
-  title: string;
+  children: React.ReactNode;
   onPress: () => void;
 };
 
-const StyledButton: React.FC<StyledButtonProps> = ({ title, onPress }) => {
+const StyledButton: React.FC<StyledButtonProps> = ({ children, onPress }) => {
   return (
     <TouchableOpacity
       className="bg-blue-500 py-3 rounded-lg items-center"
       onPress={onPress}
     >
-      <Text className="text-white text-lg font-semibold">{title}</Text>
+      <Text className="text-white text-lg font-semibold">{children}</Text>
     </TouchableOpacity>
   );
 };

@@ -1,10 +1,15 @@
-import React from "react";
 import styled from "styled-components/native";
 
 import formatMeasurement from "../utils/formatMeasurement";
 
 type WeatherDisplayProps = {
+  /**
+   * The temperature to display.
+   */
   temperature: number;
+  /**
+   * A description of the displayed temperature.
+   */
   condition: string;
 };
 

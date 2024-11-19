@@ -1,5 +1,5 @@
-import React from "react";
-import { SafeAreaView, StatusBar, StyleSheet } from "react-native";
+import { StatusBar } from "expo-status-bar";
+import { SafeAreaView, StyleSheet } from "react-native";
 
 import "../global.css";
 
@@ -10,7 +10,7 @@ const App: React.FC = () => {
   return (
     <StoreProvider>
       <SafeAreaView style={styles.container}>
-        <StatusBar barStyle="dark-content" />
+        <StatusBar style="auto" />
         <MainScreen />
       </SafeAreaView>
     </StoreProvider>
